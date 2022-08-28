@@ -16,10 +16,8 @@ function toggleMenu() {
     navigation.classList.remove('active')
 }
 
-// ==================
 const text = document.querySelector('.content p')
 text.innerHTML = text.textContent.replace(/\S/g, '<span>$&</span>')
-// console.log(text);
 
 const letters = document.querySelectorAll('.about .content p span')
 for (let i = 0; i < letters.length; i++) {
@@ -27,4 +25,3 @@ for (let i = 0; i < letters.length; i++) {
         letters[i].classList.add('active')
     })
 }
-console.log(letters);
